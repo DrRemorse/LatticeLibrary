@@ -41,7 +41,7 @@ namespace library
 					keypart = false;
         }
         else if (c == '"') {
-          reading = not reading;
+          reading = !reading;
         }
 				else if (c != ' ' || reading)
 				{
