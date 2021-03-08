@@ -11,13 +11,17 @@ namespace library
 	{
 		const unsigned int B32_ANDMASK = 0x1F;
 		
-		char coord[length];
+		//char coord[length];
+		char* coord;
+		coord = new char[length];
+
 		for (int i = 0; i < length; i++)
 		{
 			coord[length-1 - i] = 
 				convTable32[ (coordinate >> (i * 5)) & B32_ANDMASK ];
 		}
-		
+		delete[] coord;
+
 		return std::string(coord, length);
 	}
 	
@@ -25,13 +29,17 @@ namespace library
 	{
 		const unsigned int B64_ANDMASK = 0x3F;
 		
-		char coord[length];
+		//char coord[length];
+		char* coord;
+		coord = new char[length];
+
 		for (int i = 0; i < length; i++)
 		{
 			coord[length-1 - i] = 
 				convTable64[ (coordinate >> (i * 6)) & B64_ANDMASK ];
 		}
-		
+		delete[] coord;
+
 		return std::string(coord, length);
 	}
 	
