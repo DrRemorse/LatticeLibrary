@@ -44,3 +44,5 @@ SET(LIBRARY_SOURCES
   )
 
 add_library(library STATIC ${LIBRARY_SOURCES})
+include_directories(include)
+include_directories(inc)

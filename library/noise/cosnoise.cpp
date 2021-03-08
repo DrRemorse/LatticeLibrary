@@ -60,7 +60,7 @@ namespace library
 		// real slope
 		slope = curve + density * density * fatness;
 		// weights
-		double weights[8] __attribute__((aligned(32)));
+		double weights[8]; // __attribute__((aligned(32)));
 		size_x += size_x; // size_x == size_z
 
 		// optimized formula

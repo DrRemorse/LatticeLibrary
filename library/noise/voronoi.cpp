@@ -69,7 +69,7 @@ namespace library
 	}
 	inline float randf(int x, int y)
 	{
-		return randf(x xor ihash(y));
+		return randf(x ^ ihash(y));
 	}
 	
 	Voronoi::vor_t Voronoi::getdist(vor_t px, vor_t py, distance_func distFunc)
@@ -110,7 +110,7 @@ namespace library
 			if (dist < mindist)
 			{
 				// assign some integral id based on hash
-				id      = ihash(dx + 5953) xor ihash(dy + 7639);
+				id      = ihash(dx + 5953) ^ ihash(dy + 7639);
 				// save distance
 				mindist = dist;  // mew closest value
 			}
