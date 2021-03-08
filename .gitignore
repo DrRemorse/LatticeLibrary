@@ -1,0 +1,30 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Depends
+*.d
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Executable & logs
+*.exe
+*.dll
+*.log
+test
+
+# Archives
+*.rar
+
+# Edited files
+*~
+.codelite/
+
